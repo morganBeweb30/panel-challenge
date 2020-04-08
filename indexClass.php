@@ -9,10 +9,14 @@ echo "<br>";
 class Panel {
     private $fichier;
 
+    public function __construct($fichier) {
+        $this->fichier = file($fichier);
+    }
+
     /************   GETTERS *************/
 
     public function get_fichier() {
-        return $this->fichier = file('newfile.txt');
+        return $this->fichier;  //   = file($fichier);     //  'newfile.txt'
     }
 /*    public function get_nb() {
 //        return $this->nb = rand(3, 10);
@@ -77,7 +81,7 @@ class Panel {
     }
 }
 
-$panel = new Panel();
+$panel = new Panel('newfile.txt');
 $panel->get_fichier();
 echo '<br>';
 $panel->panel_votes();
