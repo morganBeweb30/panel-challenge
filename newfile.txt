@@ -1,0 +1,11 @@
+10
+jaune
+rouge
+bleu
+rouge
+bleu
+rouge
+bleu
+jaune
+orange
+bleu
